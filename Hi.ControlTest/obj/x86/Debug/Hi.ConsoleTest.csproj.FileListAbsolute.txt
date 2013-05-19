@@ -62,3 +62,16 @@ F:\Solution\北京天地星火\AgileDevelop\Hi.ControlTest\bin\Debug\Hi.Common.p
 F:\Solution\北京天地星火\AgileDevelop\Hi.ControlTest\obj\x86\Debug\Hi.ConsoleTest.csprojResolveAssemblyReference.cache
 F:\Solution\北京天地星火\AgileDevelop\Hi.ControlTest\obj\x86\Debug\ConsoleApplication1.exe
 F:\Solution\北京天地星火\AgileDevelop\Hi.ControlTest\obj\x86\Debug\ConsoleApplication1.pdb
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\ConsoleApplication1.exe.config
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\ConsoleApplication1.exe
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\ConsoleApplication1.pdb
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\Hi.Common.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\Interop.Excel.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\Interop.Word.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\office.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\Microsoft.Vbe.Interop.dll
+F:\solution\北京天地星火\Hi\Hi.ControlTest\bin\Debug\Hi.Common.pdb
+F:\solution\北京天地星火\Hi\Hi.ControlTest\obj\x86\Debug\Hi.ConsoleTest.csprojResolveAssemblyReference.cache
+F:\solution\北京天地星火\Hi\Hi.ControlTest\obj\x86\Debug\ConsoleApplication1.exe
+F:\solution\北京天地星火\Hi\Hi.ControlTest\obj\x86\Debug\ConsoleApplication1.pdb

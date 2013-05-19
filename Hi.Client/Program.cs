@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Threading;
-
+using Hi.Client.SysForm;
 using Hi.Common;
 
 namespace Hi.Client
@@ -22,12 +22,12 @@ namespace Hi.Client
             Application.ThreadException += new ThreadExceptionEventHandler(handler.Application_ThreadException);
             AppSetting.SkinName = AppSetting.ConfigGetValue("SkinName");
 
-            //FrmTrail app = new FrmTrail();
-            //Application.Run(app);
-            FrmMain app = new FrmMain();
+            var app = new FrmTrail();
+            FrmDataAutoHand frmDataAuto = new FrmDataAutoHand();
+            frmDataAuto.Show();
             if (app.mutex != null)
             {
-                Hi.UserControlEx.UcSplash.ShowFrmSplashScreen();
+                //Hi.UserControlEx.UcSplash.ShowFrmSplashScreen();
 
                 Hi.UserControlEx.UcSplash.SetStatus("正在启动主窗口...");
                 Thread.Sleep(1000);

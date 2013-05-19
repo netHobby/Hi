@@ -1,37 +1,39 @@
 ﻿using System;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
+// ReSharper disable CheckNamespace
 namespace Hi.Client
+// ReSharper restore CheckNamespace
 {
     public partial class FrmTrail : Form
     {
+        #region 全局变量
+        public Mutex mutex;
+        #endregion 
+
         public FrmTrail()
         {
             InitializeComponent();
+
+            //mutex = new Mutex(false, this.NameSpace + "_Single_MUTEX");
+            mutex = new Mutex(false,"_Single_MUTEX");
+            if (!mutex.WaitOne(0, false))
+            {
+                mutex.Close();
+                mutex = null;
+            }
         }
 
-        private void btnSumbit_Click(object sender, EventArgs e)
+        private void FrmTrail_Load(object sender, EventArgs e)
         {
-            bool blResult = IBLL.HiInstanceBll.TrailBll().TrailUpdate(SetDetail());
-            MessageBox.Show(!blResult ? "Fail!" : "Success");
-        }
-
-        /// <summary>
-        /// 重写获取详细事件
-        /// </summary>
-        private Model.BasTrail SetDetail()
-        {
-            //从画面取值
-            var model = new Model.BasTrail
-                {
-                    OrgName  = textBox1.Text.Trim(),
-                    ParentId = textBox2.Text.Trim()
-                };
-
-            return model;
+            if (!HiBLL.SetConn())
+            {
+                //ExitApplication();
+                new Exception("数据库连接失败！");
+            }
         }
 
         #region 线状图
@@ -46,8 +48,7 @@ namespace Hi.Client
             const int left = 35;
             if (width < left * 2 || height < top * 2)
             {
-                g.DrawString("绘图区域太小", new Font("Tahoma", 8),
-                    Brushes.Blue, new PointF(0, 0));
+                g.DrawString("绘图区域太小", new Font("Tahoma", 8), Brushes.Blue, new PointF(0, 0));
                 return bm;
             }
 
@@ -113,12 +114,10 @@ namespace Hi.Client
                     {
                         if (i % dis == 0)
                         {
-                            g.DrawLine(new Pen(Color.Blue, 2), new PointF(left + (i + 1) * barWidth, height -
-top + 5),
+                            g.DrawLine(new Pen(Color.Blue, 2), new PointF(left + (i + 1) * barWidth, height - top + 5),
                                 new PointF(left + (i + 1) * barWidth, height - top - 3));
                             //底部
-                            g.DrawString(dt.Rows[i][2].ToString(), new Font("Tahoma", bottomFontSize),
-Brushes.Black,
+                            g.DrawString(dt.Rows[i][2].ToString(), new Font("Tahoma", bottomFontSize), Brushes.Black,
                                 new PointF(left + (i + 1) * barWidth, height - top));
                         }
                         else
@@ -155,5 +154,6 @@ top + 3),
             }
         }
         #endregion
+
     }
 }

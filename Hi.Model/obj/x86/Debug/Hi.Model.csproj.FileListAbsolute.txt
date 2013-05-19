@@ -16,3 +16,7 @@ F:\Solution\北京天地星火\AgileDevelop\Hi.Model\bin\x86\Debug\Hi.Model.dll
 F:\Solution\北京天地星火\AgileDevelop\Hi.Model\bin\x86\Debug\Hi.Model.pdb
 F:\Solution\北京天地星火\AgileDevelop\Hi.Model\obj\x86\Debug\Hi.Model.dll
 F:\Solution\北京天地星火\AgileDevelop\Hi.Model\obj\x86\Debug\Hi.Model.pdb
+F:\solution\北京天地星火\Hi\Hi.Model\bin\x86\Debug\Hi.Model.dll
+F:\solution\北京天地星火\Hi\Hi.Model\bin\x86\Debug\Hi.Model.pdb
+F:\solution\北京天地星火\Hi\Hi.Model\obj\x86\Debug\Hi.Model.dll
+F:\solution\北京天地星火\Hi\Hi.Model\obj\x86\Debug\Hi.Model.pdb

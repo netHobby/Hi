@@ -26,3 +26,10 @@ F:\Solution\北京天地星火\AgileDevelop\Hi.IDAL\bin\x86\Debug\Hi.Model.pdb
 F:\Solution\北京天地星火\AgileDevelop\Hi.IDAL\obj\x86\Debug\Hi.IDAL.csprojResolveAssemblyReference.cache
 F:\Solution\北京天地星火\AgileDevelop\Hi.IDAL\obj\x86\Debug\Hi.IDAL.dll
 F:\Solution\北京天地星火\AgileDevelop\Hi.IDAL\obj\x86\Debug\Hi.IDAL.pdb
+F:\solution\北京天地星火\Hi\Hi.IDAL\bin\x86\Debug\Hi.IDAL.dll
+F:\solution\北京天地星火\Hi\Hi.IDAL\bin\x86\Debug\Hi.IDAL.pdb
+F:\solution\北京天地星火\Hi\Hi.IDAL\bin\x86\Debug\Hi.Model.dll
+F:\solution\北京天地星火\Hi\Hi.IDAL\bin\x86\Debug\Hi.Model.pdb
+F:\solution\北京天地星火\Hi\Hi.IDAL\obj\x86\Debug\Hi.IDAL.csprojResolveAssemblyReference.cache
+F:\solution\北京天地星火\Hi\Hi.IDAL\obj\x86\Debug\Hi.IDAL.dll
+F:\solution\北京天地星火\Hi\Hi.IDAL\obj\x86\Debug\Hi.IDAL.pdb
