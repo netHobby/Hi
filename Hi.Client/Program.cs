@@ -23,9 +23,7 @@ namespace Hi.Client
             AppSetting.SkinName = AppSetting.ConfigGetValue("SkinName");
 
             var app = new FrmTrail();
-            FrmDataAutoHand frmDataAuto = new FrmDataAutoHand();
-            frmDataAuto.Show();
-            if (app.mutex != null)
+            if (app.Mutex != null)
             {
                 //Hi.UserControlEx.UcSplash.ShowFrmSplashScreen();
 

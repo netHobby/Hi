@@ -171,11 +171,11 @@
     <Compile Include="SysForm\FrmDataAutoHand.Designer.cs">
       <DependentUpon>FrmDataAutoHand.cs</DependentUpon>
     </Compile>
-    <Compile Include="SysForm\FrmTrail.cs">
+    <Compile Include="SysForm\AchorRod.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SysForm\FrmTrail.Designer.cs">
-      <DependentUpon>FrmTrail.cs</DependentUpon>
+    <Compile Include="SysForm\AchorRod.Designer.cs">
+      <DependentUpon>AchorRod.cs</DependentUpon>
     </Compile>
     <Compile Include="SysForm\FrmUser.cs">
       <SubType>Form</SubType>
@@ -251,8 +251,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SysForm\FrmTrail.resx">
-      <DependentUpon>FrmTrail.cs</DependentUpon>
+    <EmbeddedResource Include="SysForm\AchorRod.resx">
+      <DependentUpon>AchorRod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SysForm\FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>

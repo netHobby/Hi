@@ -11,7 +11,7 @@ namespace Hi.Client
     public partial class FrmTrail : Form
     {
         #region 全局变量
-        public Mutex mutex;
+        public Mutex Mutex;
         #endregion 
 
         public FrmTrail()
@@ -19,11 +19,11 @@ namespace Hi.Client
             InitializeComponent();
 
             //mutex = new Mutex(false, this.NameSpace + "_Single_MUTEX");
-            mutex = new Mutex(false,"_Single_MUTEX");
-            if (!mutex.WaitOne(0, false))
+            Mutex = new Mutex(false,"_Single_MUTEX");
+            if (!Mutex.WaitOne(0, false))
             {
-                mutex.Close();
-                mutex = null;
+                Mutex.Close();
+                Mutex = null;
             }
         }
 
@@ -32,7 +32,7 @@ namespace Hi.Client
             if (!HiBLL.SetConn())
             {
                 //ExitApplication();
-                new Exception("数据库连接失败！");
+                throw new Exception("数据库连接失败！");
             }
         }
 
@@ -155,5 +155,24 @@ top + 3),
         }
         #endregion
 
+        /// <summary>
+        /// 清除系统信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bt_ClearInfo_Click(object sender, EventArgs e)
+        {
+            tb_SysInfo.Clear();
+        }
+
+        /// <summary>
+        /// 连接设备
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bt_ConnectDevice_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

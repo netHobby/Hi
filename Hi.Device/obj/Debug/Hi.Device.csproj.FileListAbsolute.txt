@@ -1,0 +1,4 @@
+F:\Solution\北京天地星火\Hi\Hi.Device\bin\Debug\Hi.Device.dll
+F:\Solution\北京天地星火\Hi\Hi.Device\bin\Debug\Hi.Device.pdb
+F:\Solution\北京天地星火\Hi\Hi.Device\obj\Debug\Hi.Device.dll
+F:\Solution\北京天地星火\Hi\Hi.Device\obj\Debug\Hi.Device.pdb
